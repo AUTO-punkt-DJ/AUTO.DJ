@@ -1,0 +1,18 @@
+#+title: AUTØ.DJ
+#+author: mcpeapsUnterstrichHD<mcpeaps_HD@outlook.com>
+#+description:https://mcpeapsunterstrichhd.dev/linkhub
+#+startup: showeverything
+#+options: toc:2
+
+* Table of Contents :toc:
+- [[#what-is-autødj][What is AUTØ.DJ?]]
+- [[#license][License]]
+
+* What is AUTØ.DJ?
+
+AUTØ.DJ is an software package for DJs who wants automate there sets completely but want live manipulation for performance so that there are not looking if there are not doing all the performance.
+#  LocalWords:  AUTØ.DJ
+
+* License
+
+This project is under [[../LICENCE.org][MIT]]
