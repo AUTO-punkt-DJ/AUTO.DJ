@@ -1,0 +1,12 @@
+[package]
+name = "auto-dj-programming-client"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "autø.dj-programming"
+path = "src/main.rs"
+
+
+[dependencies]
+auto-dj-shared = { path = "../shared" }

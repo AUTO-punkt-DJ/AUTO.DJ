@@ -1,0 +1,11 @@
+[package]
+name = "auto-dj-server"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "autø.dj-server"
+path = "src/main.rs"
+
+[dependencies]
+auto-dj-shared = { path = "../shared" }
