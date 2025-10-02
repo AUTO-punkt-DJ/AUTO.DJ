@@ -6,13 +6,18 @@
 
 * Table of Contents :toc:
 - [[#what-is-autødj][What is AUTØ.DJ?]]
+- [[#development-status][Development Status]]
 - [[#license][License]]
 
 * What is AUTØ.DJ?
 
-AUTØ.DJ is an software package for DJs who wants automate there sets completely but want live manipulation for performance so that there are not looking if there are not doing all the performance.
+AUTØ.DJ is software for DJs who want to automate their sets while maintaining live manipulation for performances. This allows DJs to focus on creative aspects of their performance, instead of constantly monitoring technical details.
 #  LocalWords:  AUTØ.DJ
+
+* Development Status
+
+AUTØ.DJ is currently in the earliest development phase. Features and functionality may still change significantly.
 
 * License
 
-This project is under [[../LICENSE.org][MIT]]
+This project is under [[./LICENSE.org][MIT]]
