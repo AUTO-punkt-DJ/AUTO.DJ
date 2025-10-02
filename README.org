@@ -15,4 +15,4 @@ AUTØ.DJ is an software package for DJs who wants automate there sets completely
 
 * License
 
-This project is under [[../LICENCE.org][MIT]]
+This project is under [[../LICENSE.org][MIT]]
