@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Tr4FiB" name="AUTO.DJ" projectType="guiapp" useAppConfig="1"
+              addUsingNamespaceToJuceHeader="1" jucerFormatVersion="1" companyWebsite="comboompunktsucht.app"
+              bundleIdentifier="app.comboompunktsucht.AUTO.DJ" cppLanguageStandard="latest"
+              companyName="comboom.sucht">
+  <MAINGROUP id="U3IyOv" name="AUTO.DJ">
+    <GROUP id="{85B53C4D-BCB0-7A6D-4F58-9152D4EF9B1B}" name="Source">
+      <FILE id="mJjXJy" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="nbuho7" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="mcnkSi" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_animation" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_javascript" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_midi_ci" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_FLAC="1" JUCE_USE_OGGVORBIS="1"
+               JUCE_USE_MP3AUDIOFORMAT="1" JUCE_USE_LAME_AUDIO_FORMAT="1" JUCE_USE_WINDOWS_MEDIA_FORMAT="1"
+               JUCE_VST3_CAN_REPLACE_VST2="1" JUCE_FORCE_USE_LEGACY_PARAM_IDS="0"
+               JUCE_FORCE_LEGACY_PARAMETER_AUTOMATION_TYPE="0" JUCE_USE_STUDIO_ONE_COMPATIBLE_PARAMETERS="1"
+               JUCE_AU_WRAPPERS_SAVE_PROGRAM_STATES="0" JUCE_STANDALONE_FILTER_WINDOW_USE_KIOSK_MODE="1"
+               JUCE_IGNORE_VST3_MISMATCHED_PARAMETER_ID_WARNING="0" JUCE_PLUGINHOST_AU="1"
+               JUCE_PLUGINHOST_LADSPA="1" JUCE_PLUGINHOST_LV2="1" JUCE_CUSTOM_VST3_SDK="0"
+               JUCE_USE_CDREADER="1" JUCE_USE_CDBURNER="1" JUCE_EXECUTE_APP_SUSPEND_ON_BACKGROUND_TASK="0"
+               JUCE_USE_COREIMAGE_LOADER="1" JUCE_DISABLE_COREGRAPHICS_FONT_SMOOTHING="1"
+               JUCE_USE_XRANDR="1" JUCE_USE_XINERAMA="1" JUCE_USE_XSHM="1" JUCE_USE_XRENDER="1"
+               JUCE_USE_XCURSOR="1" JUCE_WIN_PER_MONITOR_DPI_AWARE="1" JUCE_WEB_BROWSER="1"
+               JUCE_USE_WIN_WEBVIEW2="1" JUCE_USE_WIN_WEBVIEW2_WITH_STATIC_LINKING="0"
+               JUCE_ENABLE_LIVE_CONSTANT_EDITOR="1" JUCE_USE_CAMERA="1" JUCE_SYNC_VIDEO_VOLUME_WITH_OS_MEDIA_VOLUME="1"
+               JUCE_PLUGINHOST_VST3="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="AUTO.DJ" linuxArchitecture="-march=native"
+                       recommendedWarnings="GCC"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="AUTO.DJ" linuxArchitecture="-march=native"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_animation" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2022 targetFolder="Builds/VisualStudio2022" MKL1ALibrary="Parallel"
+            IPP1ALibrary="Dynamic_Library" windowsTargetPlatformVersion="11.0">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="AUTO.DJ" winArchitecture="ARM64,ARM64EC,x64"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="AUTO.DJ" winArchitecture="ARM64,ARM64EC,x64"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_animation" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX" xcodeValidArchs="arm64,arm64e,x86_64"
+               microphonePermissionNeeded="1" cameraPermissionNeeded="1" localNetworkPermissionNeeded="1"
+               iosBluetoothPermissionNeeded="1" networkingMulticast="0" applicationCategory="public.app-category.music"
+               hardenedRuntime="1" hardenedRuntimeOptions="com.apple.security.cs.allow-dyld-environment-variables,com.apple.security.cs.allow-jit,com.apple.security.cs.allow-unsigned-executable-memory,com.apple.security.cs.debugger,com.apple.security.cs.disable-executable-page-protection,com.apple.security.cs.disable-library-validation,com.apple.security.device.audio-input,com.apple.security.device.camera,com.apple.security.personal-information.photos-library">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="AUTO.DJ" macOSDeploymentTarget="26.0"
+                       osxCompatibility="26.0 SDK" osxArchitecture="Native"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="AUTO.DJ" osxArchitecture="Native"
+                       macOSDeploymentTarget="26" osxCompatibility="26 SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_animation" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
