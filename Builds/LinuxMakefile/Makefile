@@ -39,13 +39,13 @@ ifeq ($(CONFIG),Debug)
     TARGET_ARCH := -march=native
   endif
 
-  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DDEBUG=1" "-D_DEBUG=1" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell $(PKG_CONFIG) --cflags $(shell ($(PKG_CONFIG) --exists webkit2gtk-4.1 && echo webkit2gtk-4.1) || echo webkit2gtk-4.0) alsa freetype2 fontconfig libcurl gtk+-x11-3.0) -pthread -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2 -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/ -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/VST3_SDK -I../../JuceLibraryCode -I$(HOME)/JUCE/modules $(CPPFLAGS)
+  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DDEBUG=1" "-D_DEBUG=1" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell $(PKG_CONFIG) --cflags $(shell ($(PKG_CONFIG) --exists webkit2gtk-4.1 && echo webkit2gtk-4.1) || echo webkit2gtk-4.0) alsa freetype2 fontconfig gl libcurl gtk+-x11-3.0) -pthread -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2 -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/ -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/VST3_SDK -I../../JuceLibraryCode -I$(HOME)/JUCE/modules $(CPPFLAGS)
   JUCE_CPPFLAGS_APP :=  "-DJucePlugin_Build_VST=0" "-DJucePlugin_Build_VST3=0" "-DJucePlugin_Build_AU=0" "-DJucePlugin_Build_AUv3=0" "-DJucePlugin_Build_AAX=0" "-DJucePlugin_Build_Standalone=0" "-DJucePlugin_Build_Unity=0" "-DJucePlugin_Build_LV2=0"
   JUCE_TARGET_APP := AUTO
 
   JUCE_CFLAGS += $(JUCE_CPPFLAGS) $(TARGET_ARCH) -g -ggdb -O0 -Wall -Wcast-align -Wfloat-equal -Wno-ignored-qualifiers -Wsign-compare -Wsign-conversion -Wstrict-aliasing -Wswitch-enum -Wuninitialized -Wunreachable-code -Wunused-parameter -Wmissing-field-initializers -Wextra -Wsign-compare -Wno-implicit-fallthrough -Wno-maybe-uninitialized -Wredundant-decls -Wno-strict-overflow -Wno-multichar -Wshadow $(CFLAGS)
   JUCE_CXXFLAGS += $(JUCE_CFLAGS) -Woverloaded-virtual -Wreorder -Wzero-as-null-pointer-constant -std=c++20 $(CXXFLAGS)
-  JUCE_LDFLAGS += $(TARGET_ARCH) -L$(JUCE_BINDIR) -L$(JUCE_LIBDIR) $(shell $(PKG_CONFIG) --libs alsa freetype2 fontconfig libcurl) -fvisibility=hidden -lrt -ldl -lpthread $(LDFLAGS)
+  JUCE_LDFLAGS += $(TARGET_ARCH) -L$(JUCE_BINDIR) -L$(JUCE_LIBDIR) $(shell $(PKG_CONFIG) --libs alsa freetype2 fontconfig gl libcurl) -fvisibility=hidden -lrt -ldl -lpthread $(LDFLAGS)
 
   CLEANCMD = rm -rf $(JUCE_OUTDIR)/$(JUCE_TARGET_APP) $(JUCE_OBJDIR)
 endif
@@ -60,13 +60,13 @@ ifeq ($(CONFIG),Release)
     TARGET_ARCH := -march=native
   endif
 
-  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DNDEBUG=1" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell $(PKG_CONFIG) --cflags $(shell ($(PKG_CONFIG) --exists webkit2gtk-4.1 && echo webkit2gtk-4.1) || echo webkit2gtk-4.0) alsa freetype2 fontconfig libcurl gtk+-x11-3.0) -pthread -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2 -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/ -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/VST3_SDK -I../../JuceLibraryCode -I$(HOME)/JUCE/modules $(CPPFLAGS)
+  JUCE_CPPFLAGS := $(DEPFLAGS) "-DLINUX=1" "-DNDEBUG=1" "-DJUCER_LINUX_MAKE_6D53C8B4=1" "-DJUCE_APP_VERSION=1.0.0" "-DJUCE_APP_VERSION_HEX=0x10000" $(shell $(PKG_CONFIG) --cflags $(shell ($(PKG_CONFIG) --exists webkit2gtk-4.1 && echo webkit2gtk-4.1) || echo webkit2gtk-4.0) alsa freetype2 fontconfig gl libcurl gtk+-x11-3.0) -pthread -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2 -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/ -I$(HOME)/JUCE/modules/juce_audio_processors/format_types/VST3_SDK -I../../JuceLibraryCode -I$(HOME)/JUCE/modules $(CPPFLAGS)
   JUCE_CPPFLAGS_APP :=  "-DJucePlugin_Build_VST=0" "-DJucePlugin_Build_VST3=0" "-DJucePlugin_Build_AU=0" "-DJucePlugin_Build_AUv3=0" "-DJucePlugin_Build_AAX=0" "-DJucePlugin_Build_Standalone=0" "-DJucePlugin_Build_Unity=0" "-DJucePlugin_Build_LV2=0"
   JUCE_TARGET_APP := AUTO
 
   JUCE_CFLAGS += $(JUCE_CPPFLAGS) $(TARGET_ARCH) -O3 $(CFLAGS)
   JUCE_CXXFLAGS += $(JUCE_CFLAGS) -std=c++20 $(CXXFLAGS)
-  JUCE_LDFLAGS += $(TARGET_ARCH) -L$(JUCE_BINDIR) -L$(JUCE_LIBDIR) $(shell $(PKG_CONFIG) --libs alsa freetype2 fontconfig libcurl) -fvisibility=hidden -lrt -ldl -lpthread $(LDFLAGS)
+  JUCE_LDFLAGS += $(TARGET_ARCH) -L$(JUCE_BINDIR) -L$(JUCE_LIBDIR) $(shell $(PKG_CONFIG) --libs alsa freetype2 fontconfig gl libcurl) -fvisibility=hidden -lrt -ldl -lpthread $(LDFLAGS)
 
   CLEANCMD = rm -rf $(JUCE_OUTDIR)/$(JUCE_TARGET_APP) $(JUCE_OBJDIR)
 endif
@@ -74,6 +74,7 @@ endif
 OBJECTS_APP := \
   $(JUCE_OBJDIR)/Main_90ebc5c2.o \
   $(JUCE_OBJDIR)/MainComponent_a6ffb4a5.o \
+  $(JUCE_OBJDIR)/BinaryData_ce4232d4.o \
   $(JUCE_OBJDIR)/include_juce_animation_c2224b92.o \
   $(JUCE_OBJDIR)/include_juce_audio_basics_8a4e984a.o \
   $(JUCE_OBJDIR)/include_juce_audio_devices_63111d02.o \
@@ -94,6 +95,7 @@ OBJECTS_APP := \
   $(JUCE_OBJDIR)/include_juce_gui_extra_6dee1c1a.o \
   $(JUCE_OBJDIR)/include_juce_javascript_84e88969.o \
   $(JUCE_OBJDIR)/include_juce_midi_ci_1fda4092.o \
+  $(JUCE_OBJDIR)/include_juce_opengl_a8a032b.o \
   $(JUCE_OBJDIR)/include_juce_video_be78589.o \
 
 .PHONY: clean all strip
@@ -102,7 +104,7 @@ all : $(JUCE_OUTDIR)/$(JUCE_TARGET_APP)
 
 $(JUCE_OUTDIR)/$(JUCE_TARGET_APP) : $(OBJECTS_APP) $(JUCE_OBJDIR)/execinfo.cmd $(RESOURCES)
 	@command -v $(PKG_CONFIG) >/dev/null 2>&1 || { echo >&2 "pkg-config not installed. Please, install it."; exit 1; }
-	@$(PKG_CONFIG) --print-errors alsa freetype2 fontconfig libcurl
+	@$(PKG_CONFIG) --print-errors alsa freetype2 fontconfig gl libcurl
 	@echo Linking "AUTO.DJ - App"
 	-$(V_AT)mkdir -p $(JUCE_BINDIR)
 	-$(V_AT)mkdir -p $(JUCE_LIBDIR)
@@ -117,6 +119,11 @@ $(JUCE_OBJDIR)/Main_90ebc5c2.o: ../../Source/Main.cpp
 $(JUCE_OBJDIR)/MainComponent_a6ffb4a5.o: ../../Source/MainComponent.cpp
 	-$(V_AT)mkdir -p $(@D)
 	@echo "Compiling MainComponent.cpp"
+	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_APP) $(JUCE_CFLAGS_APP) -o "$@" -c "$<"
+
+$(JUCE_OBJDIR)/BinaryData_ce4232d4.o: ../../JuceLibraryCode/BinaryData.cpp
+	-$(V_AT)mkdir -p $(@D)
+	@echo "Compiling BinaryData.cpp"
 	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_APP) $(JUCE_CFLAGS_APP) -o "$@" -c "$<"
 
 $(JUCE_OBJDIR)/include_juce_animation_c2224b92.o: ../../JuceLibraryCode/include_juce_animation.cpp
@@ -217,6 +224,11 @@ $(JUCE_OBJDIR)/include_juce_javascript_84e88969.o: ../../JuceLibraryCode/include
 $(JUCE_OBJDIR)/include_juce_midi_ci_1fda4092.o: ../../JuceLibraryCode/include_juce_midi_ci.cpp
 	-$(V_AT)mkdir -p $(@D)
 	@echo "Compiling include_juce_midi_ci.cpp"
+	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_APP) $(JUCE_CFLAGS_APP) -o "$@" -c "$<"
+
+$(JUCE_OBJDIR)/include_juce_opengl_a8a032b.o: ../../JuceLibraryCode/include_juce_opengl.cpp
+	-$(V_AT)mkdir -p $(@D)
+	@echo "Compiling include_juce_opengl.cpp"
 	$(V_AT)$(CXX) $(JUCE_CXXFLAGS) $(JUCE_CPPFLAGS_APP) $(JUCE_CFLAGS_APP) -o "$@" -c "$<"
 
 $(JUCE_OBJDIR)/include_juce_video_be78589.o: ../../JuceLibraryCode/include_juce_video.cpp

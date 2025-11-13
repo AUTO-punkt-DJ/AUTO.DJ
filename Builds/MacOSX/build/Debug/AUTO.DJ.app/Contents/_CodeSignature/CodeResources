@@ -4,18 +4,62 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/Assets.car</key>
+		<data>
+		exTaBsas3IfGTzNBiPwHhygwV74=
+		</data>
+		<key>Resources/Icon.icns</key>
+		<data>
+		LMZkNKnKfP4FIi9T9F6fcnx8nzc=
+		</data>
+		<key>Resources/Logo.icns</key>
+		<data>
+		7JqkCXLVd11u8i/qJHkO3i3A+uw=
+		</data>
 		<key>Resources/RecentFilesMenuTemplate.nib</key>
 		<data>
 		4cEN55flubpq9bxeGSBG3zMPYQw=
 		</data>
+		<key>Resources/icon.json</key>
+		<data>
+		+uc0ZPKwuEkvdmeltAmZqKRGMtg=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Resources/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uiw7F0wxkCxmcFnTpq7SPVHyTeA94oobHwDymJRgtds=
+			</data>
+		</dict>
+		<key>Resources/Icon.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lhJ3J7SRWVNfdRtQzNbNtvHV13/izs8UHhW5cVRu4sQ=
+			</data>
+		</dict>
+		<key>Resources/Logo.icns</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NZDdv5KW/dRdl40I15PSM1h0VTIzsycbnWw5w/OxThA=
+			</data>
+		</dict>
 		<key>Resources/RecentFilesMenuTemplate.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cY60xaOlVk3YMq6aNs9knz7yV86JbdkhaT7rYQG9AIo=
+			</data>
+		</dict>
+		<key>Resources/icon.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AMOxk8Tx2h5yOIXboBKxQZAb6VvN1gi9tHzckvaDsX0=
 			</data>
 		</dict>
 	</dict>

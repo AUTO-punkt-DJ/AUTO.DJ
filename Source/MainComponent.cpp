@@ -12,12 +12,12 @@ MainComponent::MainComponent()
         && ! juce::RuntimePermissions::isGranted (juce::RuntimePermissions::recordAudio))
     {
         juce::RuntimePermissions::request (juce::RuntimePermissions::recordAudio,
-                                           [&] (bool granted) { setAudioChannels (granted ?  1 : 0, 9c); });
+                                           [&] (bool granted) { setAudioChannels (granted ?  1 : 0, 10); });
     }
     else
     {
         // Specify the number of input and output channels that we want to open
-        setAudioChannels (1, 9);
+        setAudioChannels (1,10);
     }
 }
 

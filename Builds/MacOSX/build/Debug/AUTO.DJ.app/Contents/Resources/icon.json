@@ -1,0 +1,57 @@
+{
+  "color-space-for-untagged-svg-colors" : "display-p3",
+  "fill-specializations" : [
+    {
+      "value" : {
+        "solid" : "srgb:0.17951,0.20303,0.25288,1.00000"
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : {
+        "solid" : "srgb:0.17951,0.20303,0.25288,1.00000"
+      }
+    }
+  ],
+  "groups" : [
+    {
+      "blur-material" : 0.7,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : {
+                "solid" : "srgb:0.92501,0.93699,0.95768,1.00000"
+              }
+            }
+          ],
+          "image-name" : "Logo 2.png",
+          "name" : "Logo 2"
+        }
+      ],
+      "lighting" : "individual",
+      "position" : {
+        "scale" : 0.35,
+        "translation-in-points" : [
+          0,
+          0
+        ]
+      },
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 1
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.9
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}

@@ -11,6 +11,7 @@
       <FILE id="mcnkSi" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
     </GROUP>
+    <FILE id="ywBxZw" name="Logo.png" compile="0" resource="1" file="Logo.png"/>
   </MAINGROUP>
   <MODULES>
     <MODULE id="juce_animation" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
@@ -28,6 +29,7 @@
     <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_javascript" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_midi_ci" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
     <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
   </MODULES>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_USE_FLAC="1" JUCE_USE_OGGVORBIS="1"
@@ -68,6 +70,7 @@
         <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
         <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
         <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2022 targetFolder="Builds/VisualStudio2022" MKL1ALibrary="Parallel"
@@ -93,12 +96,14 @@
         <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
         <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
         <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
       </MODULEPATHS>
     </VS2022>
     <XCODE_MAC targetFolder="Builds/MacOSX" xcodeValidArchs="arm64,arm64e,x86_64"
                microphonePermissionNeeded="1" cameraPermissionNeeded="1" localNetworkPermissionNeeded="1"
                iosBluetoothPermissionNeeded="1" networkingMulticast="0" applicationCategory="public.app-category.music"
-               hardenedRuntime="1" hardenedRuntimeOptions="com.apple.security.cs.allow-dyld-environment-variables,com.apple.security.cs.allow-jit,com.apple.security.cs.allow-unsigned-executable-memory,com.apple.security.cs.debugger,com.apple.security.cs.disable-executable-page-protection,com.apple.security.cs.disable-library-validation,com.apple.security.device.audio-input,com.apple.security.device.camera,com.apple.security.personal-information.photos-library">
+               hardenedRuntime="1" hardenedRuntimeOptions="com.apple.security.cs.allow-dyld-environment-variables,com.apple.security.cs.allow-jit,com.apple.security.cs.allow-unsigned-executable-memory,com.apple.security.cs.debugger,com.apple.security.cs.disable-executable-page-protection,com.apple.security.cs.disable-library-validation,com.apple.security.device.audio-input,com.apple.security.device.camera,com.apple.security.personal-information.photos-library"
+               smallIcon="ywBxZw" bigIcon="ywBxZw">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="AUTO.DJ" macOSDeploymentTarget="26.0"
                        osxCompatibility="26.0 SDK" osxArchitecture="Native"/>
@@ -122,6 +127,7 @@
         <MODULEPATH id="juce_javascript" path="../JUCE/modules"/>
         <MODULEPATH id="juce_midi_ci" path="../JUCE/modules"/>
         <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
   </EXPORTFORMATS>

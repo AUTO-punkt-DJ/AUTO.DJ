@@ -8,6 +8,8 @@
 	<string>AUTO.DJ</string>
 	<key>CFBundleExecutable</key>
 	<string>AUTO.DJ</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>app.comboompunktsucht.AUTO.DJ</string>
 	<key>CFBundleName</key>
@@ -43,7 +45,7 @@
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.music</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>26.0</string>
+	<string>11.0</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>This app requires access to Bluetooth to function correctly.</string>
 	<key>NSCameraUsageDescription</key>

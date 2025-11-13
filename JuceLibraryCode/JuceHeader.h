@@ -29,8 +29,10 @@
 #include <juce_gui_extra/juce_gui_extra.h>
 #include <juce_javascript/juce_javascript.h>
 #include <juce_midi_ci/juce_midi_ci.h>
+#include <juce_opengl/juce_opengl.h>
 #include <juce_video/juce_video.h>
 
+#include "BinaryData.h"
 
 #if defined (JUCE_PROJUCER_VERSION) && JUCE_PROJUCER_VERSION < JUCE_VERSION
  /** If you've hit this error then the version of the Projucer that was used to generate this project is

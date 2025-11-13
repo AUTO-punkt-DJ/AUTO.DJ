@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 3000 3000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+    <g id="Layer-1" serif:id="Layer 1">
+        <circle id="path1" cx="1500" cy="1500" r="1500" style="fill:rgb(123,186,168);"/>
+    </g>
+    <g id="Layer-2" serif:id="Layer 2">
+        <circle id="path2" cx="1500" cy="1500" r="1400" style="fill:rgb(46,52,64);"/>
+    </g>
+    <g id="Layer-3" serif:id="Layer 3">
+        <g transform="matrix(12.203684,0,0,15.255101,752.624317,2529.032464)">
+            <g transform="matrix(192,0,0,192,119.04,0)">
+            </g>
+            <text x="0px" y="0px" style="font-family:'0xProtoNF-Regular', '0xProto Nerd Font', monospace;font-size:192px;fill:none;stroke:rgb(207,42,49);stroke-opacity:0.15;stroke-width:5.9px;">Ø</text>
+        </g>
+    </g>
+    <g id="Layer-4" serif:id="Layer 4">
+        <g id="text3" transform="matrix(2.213027,0,0,2.118457,-361.42239,-550.88118)">
+            <g transform="matrix(5.197576,0,0,5.197576,257.036864,1314.312195)">
+                <g transform="matrix(192,0,0,192,225,0)">
+                </g>
+                <text x="0px" y="0px" style="font-family:'CaskaydiaCoveNFP-Regular', 'CaskaydiaCove Nerd Font Propo';font-size:192px;fill:rgb(255,252,255);stroke:rgb(255,254,255);stroke-width:4.16px;">DJ</text>
+            </g>
+        </g>
+    </g>
+</svg>

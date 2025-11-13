@@ -1,0 +1,80 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : {
+        "linear-gradient" : [
+          "srgb:0.29655,0.33575,0.41881,1.00000",
+          "srgb:0.17951,0.20303,0.25288,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : {
+        "linear-gradient" : [
+          "srgb:0.29655,0.33575,0.41881,1.00000",
+          "srgb:0.17951,0.20303,0.25288,1.00000"
+        ]
+      }
+    }
+  ],
+  "groups" : [
+    {
+      "blur-material" : 1,
+      "layers" : [
+        {
+          "fill" : {
+            "solid" : "srgb:0.92501,0.93699,0.95768,1.00000"
+          },
+          "image-name" : "Logo_Layer_4.png",
+          "name" : "Logo_Layer_4"
+        },
+        {
+          "fill" : {
+            "solid" : "srgb:0.75572,0.37726,0.41053,1.00000"
+          },
+          "image-name" : "Logo_Layer_3.png",
+          "name" : "Logo_Layer_3",
+          "opacity" : 1
+        },
+        {
+          "fill" : {
+            "solid" : "srgb:0.17951,0.20303,0.25288,1.00000"
+          },
+          "image-name" : "Logo_Layer_2.png",
+          "name" : "Logo_Layer_2"
+        },
+        {
+          "fill" : {
+            "solid" : "srgb:0.63663,0.74856,0.54057,1.00000"
+          },
+          "image-name" : "Logo_Layer_1.png",
+          "name" : "Logo_Layer_1"
+        }
+      ],
+      "lighting" : "individual",
+      "position" : {
+        "scale" : 0.33,
+        "translation-in-points" : [
+          0,
+          0
+        ]
+      },
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 1
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
