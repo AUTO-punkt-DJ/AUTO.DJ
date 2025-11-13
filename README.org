@@ -1,0 +1,12 @@
+#+title: AUTØ.DJ
+#+author: mcpeapsUnterstrichHD<mcpeaps_HD@outlook.com>
+#+description:https://mcpeapsunterstrichhd.dev/linkhub
+#+startup: showeverything
+#+options: toc:2
+
+* Table of Content :toc:
+- [[#what-is-it][What is it]]
+
+* What is it
+
+This is a DJ Player witch is posible to automate
